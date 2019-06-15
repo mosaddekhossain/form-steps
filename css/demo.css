@@ -1,0 +1,70 @@
+/*---------------------------------------------------------
+demo structure styles
+Author: Mosaddek
+Web: http://mosaddek.com
+-----------------------------------------------------------*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+}
+
+a{
+    color: #278be8;
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: #2073c0;
+    text-decoration: underline;
+}
+
+#mk-viewport {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+.mk-wrapper{
+    width: 1140px;
+    margin: 0 auto 5rem;
+    position: relative;
+}
+
+.mk-text-left {
+    text-align: left;
+}
+
+.mk-text-right {
+    text-align: right;
+}
+
+.mk-text-center {
+    text-align: center;
+}
+
+.mk-footer {
+    bottom: 10px;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    color: #777;
+}
+
+@media (max-width: 1139px) {
+    .mk-wrapper{
+        width: 100%;
+    }
+}

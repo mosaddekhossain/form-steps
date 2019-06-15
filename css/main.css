@@ -1,0 +1,102 @@
+/*---------------------------------------------------------
+Project: CSS Form steps
+version: 1.0
+Author: Mosaddek
+Web: http://mosaddek.com
+-----------------------------------------------------------*/
+
+.mk-form-steps {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.mk-form-steps:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.mk-form-steps__item {
+    position: relative;
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding: 0;
+    text-align: center;
+}
+
+.mk-form-steps__item-content {
+    display: inline-block;
+}
+
+.mk-form-steps__item-icon {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    color: #969b9f;
+    border: 2px solid #e5e5e5;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.mk-form-steps__item-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #969b9f;
+}
+
+.mk-form-steps__item-line {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: -50%;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.mk-form-steps__item--active .mk-form-steps__item-icon {
+    color: #278be8;
+    border: 2px solid #278be8;
+    background: #fff;
+}
+
+.mk-form-steps__item--active .mk-form-steps__item-text {
+    color: #278be8;
+}
+
+.mk-form-steps__item--active .mk-form-steps__item-line {
+    background: #278be8;
+}
+
+.mk-form-steps__item--completed .mk-form-steps__item-text {
+    color: #278be8;
+}
+
+.mk-form-steps__item--completed .mk-form-steps__item-icon {
+    line-height: 36px;
+    width: 40px;
+    height: 40px;
+    color: transparent;
+    border: 2px solid #278be8;
+    background: #278be8;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDkuMTIgNyI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTkuMTIgMS4wNkw4LjA2IDAgMy4xOCA0Ljg4IDEuMDYgMi43NiAwIDMuODIgMy4xOCA3bDUuOTQtNS45NHoiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px;
+}
+
+.mk-form-steps__item--completed .mk-form-steps__item-line {
+    background: #278be8;
+}
